@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Allycka Rahma - Barbie Edition</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <header class="profile-card">
+            <div class="sparkles">✨💖✨</div>
+            <h1 class="name">Allycka Rahma</h1>
+            <p class="tagline">Future Professional & Beauty Enthusiast</p>
+            
+            <button id="magic-btn" onclick="revealProfile()">Buka Profil Rahasia ✨</button>
+            
+            <div id="secret-content" class="hidden-section">
+                <div class="photo-frame">
+                    <img src="blob:https://web.whatsapp.com/f8736485-dffd-40c3-bd57-75620b8c94f5" alt="Foto Allycka">
+                </div>
+                <div class="about-text">
+                    <h3>Tentang Diri</h3>
+                    <p>Saya lulusan SMA yang aktif, ramah, dan bertanggung jawab. Memiliki pengalaman berjualan kecil-kecilan sehingga terbiasa melayani pelanggan, berkomunikasi dengan baik, serta bekerja dengan disiplin. Saya suka belajar hal baru, kreatif, dan memiliki minat di bidang memasak serta kecantikan.</p>
+                </div>
+            </div>
+        </header>
+
+        <div class="grid-layout">
+            <aside class="sidebar">
+                <section class="box">
+                    <h3>🎀 Biodata</h3>
+                    <p><strong>Lahir:</strong> 9 Okt 2008</p>
+                    <p><strong>Telepon:</strong> 081222754765</p>
+                    <p><strong>Alamat:</strong> Kp. Bojong Asih</p>
+                    <p><strong>Hobi:</strong> Memasak 🍳</p>
+                </section>
+
+                <section class="box">
+                    <h3>📱 Sosmed</h3>
+                    <p><strong>IG:</strong> @alsyarhmptry</p>
+                    <p><strong>TikTok:</strong> @alsrp</p>
+                </section>
+
+                <section class="box">
+                    <h3>🌐 Bahasa</h3>
+                    <p>Indonesia (Lancar)</p>
+                </section>
+            </aside>
+
+            <main class="main-info">
+                <section class="box">
+                    <h3>🎓 Pendidikan</h3>
+                    <ul class="pink-list">
+                        <li><strong>SDN 2 Dayeuhkolot</strong> <br> <small>Lulus Tahun 2020</small></li>
+                        <li><strong>SMP Bina Negera 2 Baleendah</strong> <br> <small>Lulus Tahun 2023</small></li>
+                        <li><strong>SMA KP Baleendah</strong> <br> <small>Lulus Tahun 2026</small></li>
+                    </ul>
+                </section>
+
+                <section class="box">
+                    <h3>💄 Keahlian</h3>
+                    <div class="tags">
+                        <span>Make Up Dasar</span>
+                        <span>Customer Service</span>
+                        <span>Cooking Skills</span>
+                    </div>
+                </section>
+
+                <section class="box">
+                    <h3>👑 Organisasi</h3>
+                    <p><strong>SMP:</strong> Pengurus OSIS</p>
+                    <p><em>SD & SMA: Tidak mengikuti</em></p>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <script>
+        function revealProfile() {
+            const content = document.getElementById('secret-content');
+            const btn = document.getElementById('magic-btn');
+            
+            if (content.classList.contains('show')) {
+                content.classList.remove('show');
+                btn.innerHTML = "Buka Profil Rahasia ✨";
+            } else {
+                content.classList.add('show');
+                btn.innerHTML = "Tutup Profil 🎀";
+            }
+        }
+    </script>
+</body>
+</html>
